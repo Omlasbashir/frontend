@@ -21,7 +21,7 @@ export default function NewOrderForm() {
     const [totals, setTotals] = useState({ washing: 0, ironing: 0, delivery: 0, total: 0 });
 
     useEffect(() => {
-        axios.get("http://localhost:3000/read/Newservices")
+        axios.get("https://backend-r0rr.onrender.com/read/Newservices")
             .then(res => {
                 const service = res.data[0];
                 setServicesPrice({ washing: service.price_washing, ironing: service.price_ironing, delivery: service.delivery });

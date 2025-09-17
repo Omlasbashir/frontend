@@ -17,8 +17,8 @@ function Register() {
     e.preventDefault();
     const url =
       active === "customer"
-        ? "http://localhost:3000/create/customer"
-        : "http://localhost:3000/create/admin";
+        ? "https://backend-r0rr.onrender.com/create/customer"
+        : "https://backend-r0rr.onrender.com/create/admin";
     const payload =
       active === "customer"
         ? { name, phone, email, password }

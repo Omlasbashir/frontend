@@ -15,8 +15,8 @@ function Login() {
     e.preventDefault();
     const url =
       active === "customer"
-        ? "http://localhost:3000/login/customer"
-        : "http://localhost:3000/login/admin";
+        ? "https://backend-r0rr.onrender.com/customer"
+        : "https://backend-r0rr.onrender.com/login/admin";
     const payload = { email, password };
 
     axios

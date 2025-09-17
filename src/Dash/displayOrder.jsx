@@ -10,7 +10,7 @@ function OrderDisplay() {
   // Read orders from backend
   const handleReadData = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/orders");
+      const res = await axios.get("https://backend-r0rr.onrender.com/orders");
       setData(res.data);
     } catch (error) {
       console.error("Error fetching orders:", error);
@@ -29,7 +29,7 @@ function OrderDisplay() {
   // Delete order
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/orders/${id}`);
+      await axios.delete(`https://backend-r0rr.onrender.com/orders/${id}`);
       Swal.fire({
         icon: "success",
         title: "Deleted!",

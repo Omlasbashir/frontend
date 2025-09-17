@@ -5,7 +5,7 @@ function AdminDisplay() {
   const [data, setData] = useState([]);
 
   const handleReadData = () => {
-    axios.get("http://localhost:3000/read/admin").then((res) => {
+    axios.get("https://backend-r0rr.onrender.com/read/admin").then((res) => {
       setData(res.data);
     });
   };

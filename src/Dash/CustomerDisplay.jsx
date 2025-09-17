@@ -5,7 +5,7 @@ function CustomerDisplay() {
   const [data, setData] = useState([]);
 
   const handleReadData = () => {
-    axios.get("http://localhost:3000/readd/customer").then((res) => {
+    axios.get("https://backend-r0rr.onrender.com/readd/customer").then((res) => {
       setData(res.data);
     });
   };

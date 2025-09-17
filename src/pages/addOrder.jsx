@@ -32,7 +32,7 @@ function OrderForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:3000/orders", {
+      const res = await axios.post("https://backend-r0rr.onrender.com/orders", {
         customer: { name, email, phone, district, village },
         service: { washing, ironing, washKg, ironKg },
       });

@@ -9,7 +9,7 @@ function ForgetPassword() {
   const handleReset = async (e) => {
     e.preventDefault()
     try {
-      const res = await axios.post("http://localhost:5000/forget-password", {
+      const res = await axios.post("https://backend-r0rr.onrender.com/forget-password", {
         email,
         newPassword,
       })

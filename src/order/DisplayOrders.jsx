@@ -10,7 +10,7 @@ export default function NEWOrdersDisplay() {
   // Fetch all orders from backend
   useEffect(() => {
     axios
-      .get("http://localhost:3000/read/Order")
+      .get("https://backend-r0rr.onrender.com/read/Order")
       .then((res) => {
         // Sort orders - latest first
         const sorted = res.data.sort(
@@ -24,7 +24,7 @@ export default function NEWOrdersDisplay() {
   // Delete order
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/delete/Order/${id}`);
+      await axios.delete(`https://backend-r0rr.onrender.com/Order/${id}`);
       setOrders(orders.filter((order) => order._id !== id));
       toast.success("Order deleted successfully!");
     } catch (error) {
