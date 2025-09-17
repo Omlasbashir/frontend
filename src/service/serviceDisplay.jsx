@@ -8,7 +8,7 @@
 // //   const [data, setData] = useState([]);
 
 // //   const handleReadData = () => {
-// //     axios.post("http://localhost:3000/read/service").then((res) => {
+// //     axios.post("'frontendread/service").then((res) => {
 // //       setData(res.data);
 // //     });
 // //   };
